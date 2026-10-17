@@ -45,33 +45,29 @@ Requisitos: Java 17 y MySQL encendido.
 
 1. Clona el repositorio:
 
-   ```bash
+```bash
    git clone https://github.com/XiomaraCeli123/pasteleria-spring-security.git
    cd pasteleria-spring-security
-   ```
+```
 
 2. Crea la base de datos:
 
-   ```sql
+```sql
    CREATE DATABASE proyecto;
-   ```
+```
 
 3. Revisa la conexión en `src/main/resources/application.properties` (MySQL en el puerto 3306, usuario `root`, sin contraseña).
 
 4. Ejecuta el proyecto:
 
-   ```bash
+```bash
    .\mvnw.cmd spring-boot:run      # Windows
    ./mvnw spring-boot:run          # Linux o macOS
-   ```
+```
 
 5. Abre http://localhost:8080
 
 Las tablas se crean solas la primera vez.
-
-## Autora
-
-Damaris Xiomara Quispe Celi · [GitHub](https://github.com/XiomaraCeli123) · [LinkedIn](https://linkedin.com/in/damaris-xiomara-quispe-celi-229743292)
 
 ## Autora
 
