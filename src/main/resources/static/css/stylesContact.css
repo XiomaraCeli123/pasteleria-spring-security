@@ -1,0 +1,238 @@
+/* Colores personalizados */
+        .sullys-pink {
+            background-color: pink;
+        }
+        .sullys-salmon {
+            background-color: salmon;
+        }
+        .sullys-dark {
+            color: #333;
+        }
+        .sullys-link {
+            color: #ff6347;
+        }
+
+        /* Fondo rosado con blanco y un toque de transparencia */
+        .transparent-pink-bg {
+            background: linear-gradient(to bottom, rgba(255, 182, 193, 0.6), rgba(255, 255, 255, 0.8)); /* Degradado rosado a blanco con transparencia */
+        }
+
+        /* Aplicamos las fuentes */
+        body {
+            background: url('https://png.pngtree.com/background/20230528/original/pngtree-pink-birthday-cake-with-a-candle-and-flowers-picture-image_2775165.jpg') no-repeat center center;
+            background-size: cover;
+            font-family: 'Poppins', sans-serif;
+            color: white;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Estilo del contenedor principal para el contenido */
+        .container {
+            position: relative;
+            z-index: 2;
+            padding-top: 50px;
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        /* Fondo blanco semitransparente para las secciones específicas */
+        .contact-section {
+            padding: 50px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 1s ease-in-out;
+            margin-bottom: 30px;
+        }
+
+        /* Animación de FadeIn */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Estilo para los botones */
+        .btn-custom {
+            background-color: #ff6347;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .btn-custom:hover {
+            background-color: #ff4500;
+            transform: scale(1.1);
+        }
+
+        /* Estilo para las listas de contacto */
+        .contact-info li {
+            font-size: 1.2rem;
+            margin-bottom: 12px;
+            transition: color 0.3s ease;
+        }
+
+        .contact-info li:hover {
+            color: #ff6347;
+        }
+
+        /* Estilo para los enlaces de redes sociales */
+        .social-links a {
+            font-size: 1.5rem; /* Iconos más grandes */
+            color: #ff6347;
+            margin-right: 25px;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            transform: scale(1.1);
+            color: #ff4500;
+        }
+
+        /* Diseño responsivo */
+        @media (max-width: 768px) {
+            .contact-section h2 {
+                font-size: 2rem;
+            }
+
+            .contact-info li {
+                font-size: 1rem;
+            }
+
+            .social-links a {
+                font-size: 1.2rem;
+            }
+
+            .btn-custom {
+                padding: 10px 20px;
+            }
+        }
+
+        /* Estilos para el footer */
+        footer {
+            background-color: pink;
+            color: black;
+            text-align: center;
+            padding: 2rem 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            margin-top: auto;
+        }
+
+        .footer-content {
+            overflow: hidden;
+        }
+
+        .footer-content h4 {
+            font-size: 1.9rem;
+            text-transform: uppercase;
+            font-weight: 100;
+            letter-spacing: 3px;
+            margin-bottom: 3rem;
+        }
+
+        .footer-content-about {
+            margin-bottom: 5.4rem;
+            padding: 2rem;
+            background-color: salmon;
+            color: white;
+            border-radius: 15px;
+        }
+
+        .footer-content-about p {
+            line-height: 2;
+        }
+
+        .social-icons {
+            list-style: none;
+            margin-bottom: 5.4rem;
+            display: flex;
+            justify-content: center;
+        }
+
+        .social-icons i {
+            font-size: 2rem;
+            color: salmon;
+            padding: .8rem 2rem;
+        }
+
+        .social-icons i:hover,
+        .social-icons i:focus {
+            color: #ffc845;
+        }
+
+        .news-form {
+            width: 100%;
+            position: relative;
+            display: flex;
+            justify-content: center;
+        }
+
+        .news-input {
+            width: 100%;
+            max-width: 25rem;
+            padding: 1rem;
+            border-radius: .4rem;
+        }
+
+        .news-btn {
+            background: transparent;
+            border: none;
+            color: #252525;
+        }
+
+        .footer-left,
+        .footer-right {
+            background-color: pink;
+            color: white;
+            padding: 15px;
+            border-radius: 15px;
+            margin-bottom: 1.5rem;
+            width: 100%;
+        }
+
+		/* Estilo para el footer con 2 líneas */
+		 .footer-left {
+		    margin-right: 30px;
+			color: saddlebrown;
+
+		}
+
+        .footer-right {
+            background-color: palevioletred;
+            color: white;
+            padding: 15px;
+            border-radius: 15px;
+            margin-left: 30px;
+        }
+
+        /* Estilo para el botón de volver atrás */
+        .btn-back {
+            background-color: #ff6347;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            margin-top: 20px;
+        }
+
+        .btn-back:hover {
+            background-color: #ff4500;
+            transform: scale(1.1);
+        }

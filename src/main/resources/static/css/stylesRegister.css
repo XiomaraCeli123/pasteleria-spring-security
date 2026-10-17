@@ -1,0 +1,350 @@
+stylesRegister:
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* Globales */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #000;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url('https://static.vecteezy.com/system/resources/previews/029/294/565/non_2x/elegantly-aged-tiers-create-a-vintage-wedding-cake-masterpiece-a-taste-of-history-ai-generated-photo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    animation: parallaxBackground 20s linear infinite, fadeInBody 2s ease-out;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+/* Animación para el fondo de la imagen */
+@keyframes parallaxBackground {
+    0% {
+        background-position: center;
+    }
+    50% {
+        background-position: left;
+    }
+    100% {
+        background-position: center;
+    }
+}
+
+/* Animación para el body (desvanecimiento) */
+@keyframes fadeInBody {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Secciones */
+section {
+    padding: 4rem 0;
+    overflow: hidden;
+    animation: slideInSection 1s ease-out;
+}
+
+/* Animación para las secciones */
+@keyframes slideInSection {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Títulos */
+h1, h2, h3 {
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    animation: fadeInSlide 1.5s ease-out;
+}
+
+@keyframes fadeInSlide {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Párrafos */
+p {
+    font-size: 1.4rem;
+    animation: fadeInText 2s ease-out, moveText 2s ease-in-out;
+}
+
+@keyframes fadeInText {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes moveText {
+    0% {
+        transform: translateX(-30px);
+        opacity: 0;
+    }
+    50% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(30px);
+        opacity: 0.8;
+    }
+}
+
+/* Formulario */
+.form-container {
+    background: linear-gradient(
+        to bottom, 
+        rgba(250, 128, 114, 0.9), 
+        rgba(139, 69, 19, 0.5),    
+        rgba(240, 248, 255, 0.9)   
+    );
+    padding: 2rem;
+    border-radius: .8rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+    opacity: 0;
+    animation: fadeInForm 2s ease-out forwards;
+}
+
+@keyframes fadeInForm {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animación para el movimiento de la imagen */
+img {
+    width: 100%;
+    max-width: 100%;
+    animation: zoomInImage 2s ease-out infinite alternate;
+}
+
+@keyframes zoomInImage {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.05);
+    }
+}
+
+/* Botones */
+.btn-primary, .btn-outline-primary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    padding: 0.8rem 1.8rem;
+    border-radius: .4rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-primary:hover,
+.btn-outline-primary:hover {
+    transform: scale(1.05);
+}
+
+.btn-primary {
+    background-color: #FF6347;
+    border-color: #FF6347;
+}
+
+.btn-primary:hover {
+    background-color: #e0533c;
+    border-color: #e0533c;
+}
+
+.btn-outline-primary {
+    border-color: #FF6347;
+    color: #FF6347;
+}
+
+.btn-outline-primary:hover {
+    background-color: #FF6347;
+    color: white;
+}
+
+.btn-primary i, .btn-outline-primary i {
+    margin-right: 0.5rem;
+    font-size: 1.8rem;
+}
+
+/* Formularios */
+h2 {
+   font-family: 'Roboto', sans-serif;
+   color:  #fff; 
+   text-align: center;
+   font-weight: bold;
+   animation: fadeInHeading 2s ease-out;
+}
+
+@keyframes fadeInHeading {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.form-group {
+    width: 100%;
+    max-width: 350px;
+}
+
+.col-form-label {
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.form-control {
+    border-radius: .4rem;
+    padding: 0.8rem;
+    font-size: 1.4rem;
+    margin-top: .5rem;
+    transition: background-color 0.3s ease;
+}
+
+.form-control:hover {
+    background-color: #f0f0f0;
+}
+
+.text-danger {
+    font-size: 1.4rem;
+    color: #e53e3e;
+    animation: fadeInError 1.5s ease-out;
+}
+
+@keyframes fadeInError {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Alertas */
+.alert {
+    font-size: 1.4rem;
+    padding: 1rem;
+    animation: slideInAlert 0.5s ease-out;
+}
+
+@keyframes slideInAlert {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.alert a {
+    color: #FF6347;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    padding: 6rem 0;
+    background-color: rgba(255, 99, 71, 0.8);
+    color: white;
+    text-align: center;
+    position: relative;
+    animation: fadeInFooter 2s ease-out;
+}
+
+@keyframes fadeInFooter {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.footer-content {
+    overflow: hidden;
+}
+
+.footer-content h4 {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 100;
+    letter-spacing: 3px;
+    margin-bottom: 3rem;
+}
+
+.footer-content .circle {
+    margin: 2rem 0;
+}
+
+.footer-content-about {
+    margin-bottom: 4.4rem;
+}
+
+.footer-content-about p {
+    line-height: 1.8;
+}
+
+.social-icons {
+    list-style: none;
+    margin-bottom: 4.4rem;
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons i {
+    font-size: 2rem;
+    color: salmon;
+    padding: .8rem 1.8rem;
+    transition: color 0.3s ease;
+}
+
+.social-icons i:hover {
+    color: white;
+}
