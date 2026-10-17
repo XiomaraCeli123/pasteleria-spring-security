@@ -13,15 +13,15 @@ Proyecto para practicar autenticación con Spring Security. Es una página de pa
 
 **Portada sin sesión iniciada**
 
-
+![Portada sin sesión iniciada](docs/inicio-publico.png)
 
 **Registro de usuario**
 
-
+![Registro de usuario](docs/registro.png)
 
 **Página principal con la sesión iniciada**
 
-
+![Página principal con la sesión iniciada](docs/inicio-logueado.png)
 
 ## Qué hace
 
@@ -68,6 +68,10 @@ Requisitos: Java 17 y MySQL encendido.
 5. Abre http://localhost:8080
 
 Las tablas se crean solas la primera vez.
+
+## Autora
+
+Damaris Xiomara Quispe Celi · [GitHub](https://github.com/XiomaraCeli123) · [LinkedIn](https://linkedin.com/in/damaris-xiomara-quispe-celi-229743292)
 
 ## Autora
 
